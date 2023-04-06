@@ -346,7 +346,7 @@ namespace Microsoft.Maui.Controls.Platform.Compatibility
 				if (MoreNavigationController.TopViewController.View is UITableView uITableView)
 					return uITableView.VisibleCells;
 
-				return new UITableViewCell[0];
+				return Array.Empty<UITableViewCell>();
 			}
 		}
 
